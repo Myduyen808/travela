@@ -1,0 +1,73 @@
+.datetimepicker-custom{
+    padding: 0;
+}
+
+.datetimepicker-custom:focus{
+    border: none;
+}
+
+.main-header.header-one .main-menu .navbar-collapse .navigation .active {
+    background: 0;
+}
+
+/* Style for dropdown for login */
+ .menu-sidebar .dropdowm-menu{
+    padding: 0;
+}
+
+/* Dropdown menu hidden by default*/
+
+.dropdowm-menu {
+    list-style-type: none;
+    position: absolute ;
+    top: 60px;
+    right: 0;
+ }
+
+.dropdowm-menu {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /*Thêm box-shadow   */
+}
+
+.dropdown-menu li {
+    padding: 8px 16px;
+    border-bottom: 1px solid var(--base-color);
+}
+
+/*loại bỏ đường viền dưới cho mục cuối cùng */
+.dropdowm-menu li:last-child {
+    border-bottom: none;
+}
+
+/* .icon-user {
+    font-size: 36px;
+    color:black;
+} */
+
+/*Dropdown menu hidden by default*/
+/* .dropdown-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50px; /* Adjust to the correct position */
+    /* right: 0; */
+    /* left: -88px; */
+    /* background-color: white;
+    display: none;
+    border: 1px solid #ddd;
+    z-index: 1000;
+} */
+
+/* .dropdown-menu li {
+    padding: 8px 16px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+} */
+
+.dropdowm-menu li a:hover {
+    background-color: var(--primary-color);
+}
