@@ -1,6 +1,6 @@
 @include('clients.blocks.header')
 @include('clients.blocks.banner_search')
-{{-- 
+{{--
 <!-- Hidden Sidebar -->
 <section class="hidden-bar">
     <div class="inner-box text-center">
@@ -146,7 +146,7 @@
 
 
 <!-- Hotel Area start -->
-<section class="hotel-area bgc-black pt-100 pb-70 rel z-1">
+{{-- <section class="hotel-area bgc-black pt-100 pb-70 rel z-1">
     <div class="container">
         <div class="row">
             <div class="col-xl-4">
@@ -249,7 +249,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 <!-- Hotel Area end -->
 
 

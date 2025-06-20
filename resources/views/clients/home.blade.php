@@ -620,7 +620,7 @@
 <!-- Testimonials Area end -->
 
 
-<!-- CTA Area start -->
+{{-- <!-- CTA Area start -->
 <section class="cta-area pt-100 rel z-1">
     <div class="container-fluid">
         <div class="row">
@@ -659,10 +659,10 @@
         </div>
     </div>
 </section>
-<!-- CTA Area end -->
+<!-- CTA Area end --> --}}
 
 
-<!-- Blog Area start -->
+{{-- <!-- Blog Area start -->
 <section class="blog-area py-70 rel z-1">
     <div class="container">
         <div class="row justify-content-center">
@@ -738,6 +738,6 @@
         </div>
     </div>
 </section>
-<!-- Blog Area end -->
+<!-- Blog Area end --> --}}
 
 @include('clients.blocks.footer')

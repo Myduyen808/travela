@@ -34,6 +34,8 @@
     <link rel="stylesheet"href="{{ asset('clients/assets/css/slick.min.css') }}">
     <!-- Main Style -->
     <link rel="stylesheet"href="{{ asset('clients/assets/css/style.css') }}">
+        <!-- date time picker -->
+    <link rel="stylesheet" href="{{ asset('clients/assets/css/jquery.datetimepicker.min.css') }}" />
 
      {{--boxicons--}}
      <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel='stylesheet'>
@@ -92,7 +94,7 @@
                                         </li>
                                         <li><a href="{{ route('destination') }}">Điểm đến</a></li>
                                         <li><a href="{{ route('contact') }}">Liên hệ</a></li>
-                                        <li><a href="{{ route('blog') }}">blog</a>
+                                        {{-- <li><a href="{{ route('blog') }}">blog</a> --}}
                                         </li>
                                     </ul>
                                 </div>
@@ -184,13 +186,13 @@
                 </div>
             </div>
         </section>
-        <div class="container container-1400">
+          {{-- <div class="container container-1400">
             <div class="search-filter-inner" data-aos="zoom-out-down" data-aos-duration="1500" data-aos-offset="50">
                 <div class="filter-item clearfix">
                     <div class="icon"><i class="fal fa-map-marker-alt"></i></div>
                     <span class="title">Điểm đến</span>
                     <select name="city" id="city">
-                        <option value="value1">City or Region</option>
+                         <option value="value1">City or Region</option>
                         <option value="value2">City</option>
                         <option value="value2">Region</option>
                     </select>
@@ -198,20 +200,12 @@
                 <div class="filter-item clearfix">
                     <div class="icon"><i class="fal fa-calendar-alt"></i></div>
                     <span class="title">Ngày khởi hành</span>
-                    <select name="date" id="date">
-                        <option value="value1">Date from</option>
-                        <option value="value2">10</option>
-                        <option value="value2">20</option>
-                    </select>
+                    <input type="text" id="start_date" name="start_date" class="datetimepicker datetimepicker-custom" placeholder="Chọn ngày đi" readonly>
                 </div>
                 <div class="filter-item clearfix">
                     <div class="icon"><i class="fal fa-calendar-alt"></i></div>
                     <span class="title">Ngày kết thúc</span>
-                    <select name="date" id="date">
-                        <option value="value1">Date from</option>
-                        <option value="value2">10</option>
-                        <option value="value2">20</option>
-                    </select>
+                    <input type="text" id="end_date" name="end_date" class="datetimepicker datetimepicker-custom" placeholder="Chọn ngày về" readonly>
                 </div>
                 <div class="search-button">
                     <button class="theme-btn">
@@ -220,7 +214,7 @@
                     </button>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <!-- Page Banner End -->
 
 
@@ -383,7 +377,7 @@
 
                             <div class="widget widget-languages" data-aos="fade-up" data-aos-duration="1500"
                                 data-aos-offset="50">
-                                <h6 class="widget-title">Theo ngôn ngữ</h6>
+                                <h6 class="widget-title">Các Nước</h6>
                                 <ul class="radio-filter">
                                     <li>
                                         <input class="form-check-input" type="radio" checked name="ByLanguages"
@@ -425,22 +419,22 @@
                                     <li>
                                         <input class="form-check-input" type="radio" checked name="Duration"
                                             id="duration1">
-                                        <label for="duration1">0 - 2 giờ</label>
+                                        <label for="duration1">1 - 2 ngày</label>
                                     </li>
                                     <li>
                                         <input class="form-check-input" type="radio" name="Duration"
                                             id="duration2">
-                                        <label for="duration2">2 - 4 giờ</label>
+                                        <label for="duration2">2 - 4 ngày</label>
                                     </li>
                                     <li>
                                         <input class="form-check-input" type="radio" name="Duration"
                                             id="duration3">
-                                        <label for="duration3">4 - 8 giờ</label>
+                                        <label for="duration3">4 - 8 ngày</label>
                                     </li>
                                     <li>
                                         <input class="form-check-input" type="radio" name="Duration"
                                             id="duration4">
-                                        <label for="duration4">hơn 8 giờ</label>
+                                        <label for="duration4">hơn 8 ngày</label>
                                     </li>
                                     <li>
                                         <input class="form-check-input" type="radio" name="Duration"
@@ -450,7 +444,7 @@
                                 </ul>
                             </div>
 
-                            <div class="widget widget-tour" data-aos="fade-up" data-aos-duration="1500"
+                            {{-- <div class="widget widget-tour" data-aos="fade-up" data-aos-duration="1500"
                                 data-aos-offset="50">
                                 <h6 class="widget-title">Các tour du lịch phổ biến</h6>
                                 <div class="destination-item tour-grid style-three bgc-lighter">
@@ -486,10 +480,10 @@
                                         <h6><a href="tour-details.html">Paris, Thành phố tình yêu</a></h6>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
 
-                        <div class="widget widget-cta mt-30" data-aos="fade-up" data-aos-duration="1500"
+                        {{-- <div class="widget widget-cta mt-30" data-aos="fade-up" data-aos-duration="1500"
                             data-aos-offset="50">
                             <div class="content text-white">
                                 <span class="h6">Khám phá thế giới</span>
@@ -505,7 +499,7 @@
                             <div class="cta-shape"><img
                                     src="{{ asset('clients/assets/images/widgets/cta-shape2.png') }}" alt="Shape">
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                     <div class="col-lg-9">
                         <div class="shop-shorter rel z-3 mb-20">
@@ -829,7 +823,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-4 col-md-6">
+                                {{-- <div class="col-xl-4 col-md-6">
                                     <div class="destination-item tour-grid style-three bgc-lighter" data-aos="fade-up"
                                         data-aos-duration="1500" data-aos-offset="50">
                                         <div class="image">
@@ -928,26 +922,26 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-12">
+                                </div> --}}
+                                {{-- <div class="col-lg-12">
                                     <ul class="pagination justify-content-center pt-15 flex-wrap" data-aos="fade-up"
                                         data-aos-duration="1500" data-aos-offset="50">
                                         <li class="page-item disabled">
                                             <span class="page-link"><i class="far fa-chevron-left"></i></span>
-                                        </li>
-                                        <li class="page-item active">
+                                        </li> --}}
+                                        {{-- <li class="page-item active">
                                             <span class="page-link">
                                                 1
                                                 <span class="sr-only">(current)</span>
                                             </span>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        </li> --}}
+                                        {{-- <li class="page-item"><a class="page-link" href="#">2</a></li>
                                         <li class="page-item"><a class="page-link" href="#">3</a></li>
                                         <li class="page-item"><a class="page-link" href="#">...</a></li>
                                         <li class="page-item">
                                             <a class="page-link" href="#"><i
                                                     class="far fa-chevron-right"></i></a>
-                                        </li>
+                                        </li> --}}
                                     </ul>
                                 </div>
                             </div>
@@ -1179,7 +1173,7 @@
         <!-- Custom script -->
         <script src="{{ asset('clients/assets/js/script.js') }}"></script>
 
-
+        <script src="{{asset('clients/assets/js/jquery.datetimepicker.full.min.js') }}"></script>
 </body>
 
 

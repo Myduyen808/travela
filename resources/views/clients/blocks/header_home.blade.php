@@ -107,9 +107,9 @@
                                                 href="{{ route('destination') }}">Điểm đến</a></li>
                                         <li class="{{ Request::url() == route('contact') ? 'active' : '' }}"><a
                                                 href="{{ route('contact') }}">Liên hệ</a></li>
-                                        <li class="{{ Request::url() == route('blog') ? 'active' : '' }}"><a
+                                        {{-- <li class="{{ Request::url() == route('blog') ? 'active' : '' }}"><a
                                                 href="{{ route('blog') }}">blog</a>
-                                        </li>
+                                        </li> --}}
                                     </ul>
                                 </div>
 

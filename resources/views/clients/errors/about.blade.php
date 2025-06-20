@@ -284,7 +284,7 @@
 <!-- Video Area end --> --}}
 
 <!--Team Area start -->
-  <section class="row justify-content-center">
+  {{-- <section class="row justify-content-center">
     <div class="col-xl-3 col-lg-4 col-sm-6">
         <div class="team-item hover-content" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="50">
             <img src="{{ asset('clients/assets/images/about/duyen.png') }}" alt="Guide" style="margin-top: 10px;">
@@ -302,7 +302,7 @@
       </div>
    </div>
 </div>
-</section>
+</section> --}}
 <!--Team Area end -->
 
 
